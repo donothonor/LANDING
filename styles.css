@@ -1,0 +1,369 @@
+* {
+    margin: 0;
+}
+
+body {
+    color: white;
+    font-weight: normal;
+    font-family: 'Nunito Sans', sans-serif;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+h1 {
+ 
+}
+.block-title {
+    font-family: 'Yeseva One';
+    font-weight: normal;
+}
+.btn {
+    cursor: pointer;
+    border-radius: 2px;
+    color: white;
+    text-transform: uppercase;
+}
+.header a {
+    color: white;
+}
+.header {
+    height: 83px;
+    font-size: 11px;
+    color: white;
+    background-color: black;
+}
+.header-content {
+    padding-top: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+@media screen and (max-width : 1300px) {
+    .container {
+        width: 339px;
+    }
+    .header {
+        height: 56px;
+    }
+    .header-content_navigation {
+        display: none;
+    }
+    .header-content_button {
+        display: none;
+    }
+}
+.container{
+    margin: 0 auto;
+    max-width: 1260px;
+}
+.header-content_logo {
+}
+.header-content_logo-link span {
+    color: #E3B873;
+}
+.header-content_navigation {
+   min-width: 580px;
+}
+.header-content_navigation-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.header-content_navigation-list-item a:hover {
+    color:#E3B873;
+}
+.header-content_contacts-item:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: #E3B873;
+
+}
+.header-content_button {
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+    width: 160px;
+    height: 35px;
+    background: #E3B873;
+}
+
+
+.turnkey {
+    position: relative;
+    color: white;
+    height: 710px;
+    background-image: url('/assets/turkey_BG.jpg');
+}
+.turnkey::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+    background: rgba(0, 0, 0, 0.7) ;
+    z-index: 2;
+}
+.turnkey-content {
+    position: relative;
+    z-index: 3;
+    padding-left: 44px;
+    padding-top: 195px;
+}
+.turnkey-content_title {
+    font-size: 40px;
+    text-transform: uppercase;
+}
+.turnkey-content_title span {
+    color: #E3B873;
+}
+.turnkey-content_subtitle {
+    margin-top: 20px;
+    font-size: 22px;
+}
+.turnkey-content_buttons {
+    margin-top: 38px;
+}
+.turnkey-content_button-item {
+    font-size: 11px;
+    font-style: italic;
+    width: 207px;
+    height: 51px;
+}
+.turnkey-content_button-item:first-child {
+    margin-right: 20px;
+    background-color: #E3B873;
+}
+.turnkey-content_button-item:last-child {
+    border: 1px solid #FFFFFF;
+    background: none;
+}
+
+@media screen and (max-width : 1300px) {
+    .block-title {
+        font-size: 23px;
+    }
+    .turnkey {
+        height: 476px;
+    }
+    .turnkey-content_subtitle {
+        margin-top: 16px;
+        font-size: 14px;
+    }
+    .turnkey-content {
+        padding-left: 0px;
+        padding-top: 85px;
+    }
+    .turnkey-content_button-item {
+        width: 339px;
+        height: 51px;
+    }
+    .turnkey-content_buttons {
+        flex-direction: column;
+        margin-top: 38px;
+        display: flex;
+        margin-bottom: 61px;
+    }
+    .turnkey-content_button-item:first-child {
+        margin-right: 0px;
+        margin-bottom: 26px;
+    }
+}
+
+
+.complete {
+    height: 1074px;
+    background-color: black;
+}
+.complete-content {
+    position: relative;
+}
+.complete-content_navigation {
+    width: 625px;
+    position: absolute;
+    top: 107px;
+    right: 93px;
+}
+.complete-content_navigation-list {
+    display: flex;
+    justify-content: space-between;
+}
+.complete-content_navigation-list-item {
+    cursor: pointer;
+    font-family: 'Yeseva One';
+    text-transform: uppercase;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.3);
+}
+.complete-content_navigation-list-item:hover {
+    color: #E3B873;
+    text-decoration: underline;
+}
+.complete-content_main {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 177px;
+}
+.complete-content_main-aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.complete-content_main-aside-title {
+    text-transform: uppercase;
+    font-size: 27px;
+    color: #E3B873;
+}
+.complete-content_main-aside-subtitle {
+    font-size: 14px;
+    line-height: 27px;
+}
+.complete-content_main-aside-discription {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 34px;
+    
+}
+.complete-content_main-aside-discription-item {
+}
+.complete-content_main-aside-discription-item h3 {
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #E3B873;
+    margin-bottom: 10px;
+}
+.complete-content_main-aside-arrows {
+    width: 205px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.complete-content_main-aside-arrows_left {
+    position: relative;
+    background-color: white;
+    width: 40.5px;
+    height: 1.5px;
+}
+.complete-content_main-aside-arrows_left::before {
+    color: white;
+    content: url(/assets/svg/Vector\(Stroke\).svg);
+    position: absolute;
+    transform: translateY(-38%);
+    top: 0;
+    left: 0;
+}
+.complete-content_main-aside-arrows-dots {
+    width: 65px;
+    display: flex;
+    justify-content: space-between;
+}
+.complete-content_main-aside-arrows-dots-item {
+    width: 9.5px;
+    height: 9.5px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 30px;
+}
+.complete-content_main-aside-arrows-dots-item:hover {
+    cursor: pointer;
+    background: white;
+}
+.complete-content_main-aside-arrows_rigth {
+    position: relative;
+    background-color: white;
+    width: 40.5px;
+    height: 1.5px;
+}
+.complete-content_main-aside-arrows_rigth::before {
+    content: url(/assets/svg/Vector\(Stroke\).svg);
+    color: white;
+    position: absolute;
+    transform: rotate(-180deg) translateY(60%);
+    top: 0;
+    right : 0;
+}
+.complete-content_main-image {
+}
+.complete-content_main-image-item {
+}
+.arrow__mobile {
+    display: none;
+    border-radius: 50%;
+    background: #E3B873;
+    width: 36px;
+    height: 36px;
+}
+
+.mobile_arrow_left::before {
+    content: url(/assets/svg/Vector\(Stroke\).svg);
+    position: absolute;
+    top: 25%;
+    left: 35%;
+}
+.mobile_arrow_right::before {
+    content: url(/assets/svg/Vector\(Stroke\).svg);
+    position: absolute;
+    transform: rotate(-180deg);
+    top: 15%;
+    right: 35%; 
+}
+
+.complete-content-main-aside_mobile-img {
+    display: none;
+}
+
+@media screen and (max-width : 1300px) {
+    .complete {
+        position: relative;
+    }
+    .complete-content_navigation {
+        display: none;
+    }
+    .complete-content_main-aside-arrows {
+        display: none;
+    }
+    .complete-content_main {
+        padding-top: 36px;
+        flex-direction: column;
+    }
+    .complete-content_main-image-item {
+        width: 340px;
+        height: 241.35px;
+    }
+    .complete-content_main-image{
+        display: none;
+    }
+    .complete-content_main-aside-title {
+        text-align: center;
+        margin-bottom: 22px;
+    }
+    .complete-content_main-aside-subtitle {
+        text-align: center;
+        margin-bottom: 36px;
+    }
+    .complete-content-main-aside_mobile-img {
+        display: block;
+        margin-bottom: 37px;
+    }
+    .arrow__mobile {
+        position: absolute;
+
+        display: block;   
+    }
+    .mobile_arrow_left {
+        top: 365px;
+        left: 20px;
+    }
+    .mobile_arrow_right {
+        top: 365px;
+        right:20px;
+    }
+    
+
+
+}
