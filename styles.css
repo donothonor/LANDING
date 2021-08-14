@@ -98,7 +98,7 @@ h1 {
     position: relative;
     color: white;
     height: 710px;
-    background-image: url('/assets/turkey_BG.jpg');
+    background-image: url('./assets/turkey_BG.jpg');
 }
 .turnkey::before {
     position: absolute;
@@ -259,7 +259,7 @@ h1 {
 }
 .complete-content_main-aside-arrows_left::before {
     color: white;
-    content: url(/assets/svg/Vector\(Stroke\).svg);
+    content: url('./assets/svg/Vector\(Stroke\).svg');
     position: absolute;
     transform: translateY(-38%);
     top: 0;
@@ -290,7 +290,7 @@ h1 {
     height: 1.5px;
 }
 .complete-content_main-aside-arrows_rigth::before {
-    content: url(/assets/svg/Vector\(Stroke\).svg);
+    content: url('./assets/svg/Vector\(Stroke\).svg');
     color: white;
     position: absolute;
     transform: rotate(-180deg) translateY(60%);
@@ -310,13 +310,13 @@ h1 {
 }
 
 .mobile_arrow_left::before {
-    content: url(/assets/svg/Vector\(Stroke\).svg);
+    content: url('./assets/svg/Vector\(Stroke\).svg');
     position: absolute;
     top: 25%;
     left: 35%;
 }
 .mobile_arrow_right::before {
-    content: url(/assets/svg/Vector\(Stroke\).svg);
+    content: url('./assets/svg/Vector\(Stroke\).svg');
     position: absolute;
     transform: rotate(-180deg);
     top: 15%;
