@@ -302,6 +302,7 @@ h1 {
 .complete-content_main-image-item {
 }
 .arrow__mobile {
+    border: none;
     display: none;
     border-radius: 50%;
     background: #E3B873;
@@ -312,14 +313,14 @@ h1 {
 .mobile_arrow_left::before {
     content: url('./assets/svg/Vector\(Stroke\).svg');
     position: absolute;
-    top: 25%;
+    top: 30%;
     left: 35%;
 }
 .mobile_arrow_right::before {
     content: url('./assets/svg/Vector\(Stroke\).svg');
     position: absolute;
     transform: rotate(-180deg);
-    top: 15%;
+    top: 20%;
     right: 35%; 
 }
 
