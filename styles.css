@@ -144,6 +144,9 @@ h1 {
     border: 1px solid #FFFFFF;
     background: none;
 }
+.turnkey-content_button-item:last-child::before {
+    content: 'SUBMIT YOUR APPLICATION';
+}
 
 @media screen and (max-width : 1300px) {
     .block-title {
@@ -174,6 +177,9 @@ h1 {
     .turnkey-content_button-item:first-child {
         margin-right: 0px;
         margin-bottom: 26px;
+    }
+    .turnkey-content_button-item:last-child::before {
+        content: 'APPLICATION';
     }
 }
 
