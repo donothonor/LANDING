@@ -3,6 +3,7 @@
 }
 
 body {
+    position: relative;
     color: white;
     font-weight: normal;
     font-family: 'Nunito Sans', sans-serif;
@@ -32,6 +33,10 @@ h1 {
     color: white;
 }
 .header {
+    z-index: 9999;
+    position: sticky;
+    top: 0;
+    left: 0;
     height: 83px;
     font-size: 11px;
     color: white;
