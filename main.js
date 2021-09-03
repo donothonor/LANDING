@@ -26,28 +26,28 @@ const setDot = (index) => {
     })
 }    
 
+navigaton.forEach(addIndexClass)
+dots.forEach(addIndexClass)
 
+console.log(dots)
 const prev = document.querySelectorAll('.left')
 const next = document.querySelectorAll('.right')
-console.log(prev)
-console.log(next)
 let currentIndex = 0
+
 next.forEach(item => {
     item.addEventListener('click', () => {
-        currentIndex === 2 ? currentIndex = 0 : currentIndex += 1
+        currentIndex === navigaton.length - 1 ? currentIndex = 0 : currentIndex++
         setImage(currentIndex);
         setDot(currentIndex)
         setNavigation(currentIndex) 
-        console.log('click next')
     })
 })
 prev.forEach(item => {
     item.addEventListener('click', () => {
-        currentIndex === 0 ? currentIndex = 2 : currentIndex -= 1
+        currentIndex === 0 ? currentIndex = navigaton.length - 1 : currentIndex--
         setImage(currentIndex);
         setDot(currentIndex)
         setNavigation(currentIndex)
-        console.log('click previous')
     })
 })
 
@@ -55,20 +55,24 @@ prev.forEach(item => {
 dots.forEach(setItem)
 navigaton.forEach(setItem)
 
+
 function setItem (item)  {
-    item.addEventListener('click', () => {
-        if (item.classList.contains('n0')) {
-            setImage(0)
-            setDot(0)
-            setNavigation(0)
-        } else if (item.classList.contains('n1')) {
-            setImage(1)
-            setDot(1)
-            setNavigation(1)
-        } else {
-            setImage(2)
-            setDot(2)
-            setNavigation(2)
+    item.addEventListener('click',(e) => {
+        let index = +e.target.classList[1][1]
+        if (typeof +index !== 'number' ) {
+            return
+        } else {    
+        setImage(index)
+        setDot(index)
+        setNavigation(index)
+        currentIndex = index
         }
+        console.log(e.target.classList, +e.target.classList[1][1])
     })
 }
+
+function addIndexClass (elem, index) {
+    elem.classList.add(`n${index}`)
+}
+
+console.log()
