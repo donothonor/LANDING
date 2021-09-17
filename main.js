@@ -29,7 +29,6 @@ const setDot = (index) => {
 navigaton.forEach(addIndexClass)
 dots.forEach(addIndexClass)
 
-console.log(dots)
 const prev = document.querySelectorAll('.left')
 const next = document.querySelectorAll('.right')
 let currentIndex = 0
@@ -67,7 +66,6 @@ function setItem (item)  {
         setNavigation(index)
         currentIndex = index
         }
-        console.log(e.target.classList, +e.target.classList[1][1])
     })
 }
 
@@ -75,4 +73,3 @@ function addIndexClass (elem, index) {
     elem.classList.add(`n${index}`)
 }
 
-console.log()
