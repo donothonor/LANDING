@@ -384,3 +384,181 @@ h1 {
 
 
 }
+.control {
+    margin-top: -298px;
+}
+.control-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container {
+}
+.control-content-video {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.control-content-video_title {
+    margin-bottom: 13px;
+    font-family: 'Yeseva One';
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+
+}
+.control-content-video_logo {
+    position: relative;
+    background: url(./assets/svg/Camera.svg);
+    width: 33px;
+    height: 28px;
+    margin-bottom: 31px;
+}
+.control-content-video_logo::before {
+    content: '';
+    background-color: #E3B873;
+    width: 32px;
+    height: 1.5px;
+    position: absolute;
+    top: 50%;
+    left: -150%;
+    
+}
+.control-content-video_logo::after {
+    content: '';
+    background-color: #E3B873;
+    width: 32px;
+    height: 1.5px;
+    position: absolute;
+    top: 50%;
+    left: 150%;
+    
+}
+.control-content-video_item {
+    margin-bottom: 62.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 817px;
+    height: 434px;
+    background: url(./assets/image\ 6.jpg);
+}
+.control-content-video_item-button {
+    position: relative;
+    cursor: pointer;
+    align-self: center;
+    border-radius: 50%;
+    width: 85px;
+    height: 85px;
+    background: #E3B873;
+    position: relative;
+    z-index: 100000;
+
+}
+.control-content-video_item-button::before {
+    content: '';
+    background: url(./assets/svg/Polygon.svg) no-repeat;
+    position: absolute;
+    top: 35%;
+    left: 40%;
+    width: 28px;
+    height: 28px;
+}
+.control-content-video_item::before {
+    content: '';
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.control-content-video_line {
+    margin-bottom: 34.5px;
+    background-color: #E3B873;
+    width: 55px;
+    height: 1.5px;
+}
+.control-content-video_discription {
+    width: 681px;
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 37px;
+    text-align: center;
+    color: #363636;
+    margin-bottom: 92px;
+}
+.control-content-form {
+    width: 769px;
+    display: flex;
+    flex-direction: column;
+}
+.control-content-form_input {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+.control-content-form_input p {
+    color: #36363680;
+    font-size: 13px;
+
+}
+.control-input {
+    width: 231px;
+    padding: 8px 0;
+    border-width: 0 0 2px 0;
+    border-color: rgba(0, 0, 0, 0.7);
+}
+.control-input:focus {
+    outline: none;
+}
+.control button {
+    background: #E3B873;
+    box-shadow: 0px 15px 15px rgba(227, 184, 115, 0.15);
+    border-radius: 2px; 
+    text-transform: uppercase;
+    border: none;
+    color: white;
+    width: 200px;
+    height: 51px;
+}
+.name-container {
+
+}
+.phone-container {
+
+}
+.control-content-form_name {
+    
+}
+.control-content-form_phone {
+}
+
+
+.control-content-form_checkbox {
+    margin: 0 auto;
+    width: 285px;
+    display: flex;
+    justify-content: space-between;
+}
+.control-content-form_checkbox-item {
+    align-self: center;
+    width: 18px;
+    height: 18px;
+}
+.control-content-form_checkbox-item:checked {
+    background-color: #E3B873;
+}
+.control-content-form_checkbox-text {
+    font-weight: 400;
+    line-height: 163.68%;
+    width: 258px;
+    font-size: 14px;
+    color: black;
+}
