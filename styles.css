@@ -1,4 +1,5 @@
 * {
+    /* transition: all 0.5s; */
     margin: 0;
 }
 
@@ -10,14 +11,12 @@ body {
     margin: 0 auto;
 }
 li {
-    list-style-type: none;
+    /* list-style-type: none; */
 }
 a {
     text-decoration: none;
 }
-h1 {
- 
-}
+
 .block-title {
     font-family: 'Yeseva One';
     font-weight: normal;
@@ -72,6 +71,7 @@ h1 {
    min-width: 580px;
 }
 .header-content_navigation-list {
+    list-style-type: none;
     display: flex;
     justify-content: space-between;
 }
@@ -336,6 +336,7 @@ h1 {
 
 @media screen and (max-width : 1300px) {
     .complete {
+        height: unset;
         position: relative;
     }
     .complete-content_navigation {
@@ -345,6 +346,7 @@ h1 {
         display: none;
     }
     .complete-content_main {
+        padding-bottom: 58px;
         padding-top: 36px;
         flex-direction: column;
     }
@@ -543,22 +545,244 @@ h1 {
 
 .control-content-form_checkbox {
     margin: 0 auto;
+    margin-bottom: 148px;
     width: 285px;
     display: flex;
     justify-content: space-between;
 }
 .control-content-form_checkbox-item {
-    align-self: center;
-    width: 18px;
-    height: 18px;
+    display: none;
 }
-.control-content-form_checkbox-item:checked {
-    background-color: #E3B873;
+.control-content-form_checkbox-item:checked + .fake::before {
+    opacity: 1;
 }
 .control-content-form_checkbox-text {
     font-weight: 400;
     line-height: 163.68%;
-    width: 258px;
     font-size: 14px;
     color: black;
+}
+.control-content-form_checkbox_label {
+    cursor: pointer;
+}
+.fake {
+    display: inline-flex;
+    width: 18px;
+    height: 18px;
+    background: #E3B873;
+    color: #fff;
+    justify-content: center;
+}
+.fake::before {
+    content: "\2714";
+    opacity: 0;
+    transition: .2s;
+}
+@media screen and (max-width : 1300px) {
+    .control {
+        background-color: black;
+        margin-top: -0px;
+    }
+    .control-content-video_item {
+        margin-bottom: 28px;
+        background-size: cover;
+        width: 340px;
+        height: 207px; 
+    }
+    .control-content {
+        position: relative;
+    }
+    .control-content-video_logo {
+        margin-bottom: 40.21px;
+    }
+    .control-content-video_line {
+        margin-bottom: 21px;
+    }
+    .control-content-video_item-button {
+        width: 37px;
+        height: 37px;
+    }
+    .control-content-video_item-button::before {
+        width: 12px;
+        height: 12px;
+    }
+    .control-content-video_title {
+        font-size: 22px;
+    }
+    .control-content-video_discription {
+        margin-bottom: 61px;
+        font-size: 11px;
+        line-height: 169.8%;
+        color: white;
+        width: unset;
+    }
+    .control-input {
+        color: white;
+    }
+    .control-content-form_input {
+        margin-bottom: 132px;
+        width: 340px;
+        flex-direction: column;
+    }
+    .control-content-form_input div {
+        margin-bottom: 63px;
+    }
+    .control-content-form {
+        width: 340px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .control-content-form p {
+        color: rgba(255, 255, 255, 0.5);
+    }
+    .control-content-form_checkbox-text {
+       color: white;
+    }
+    .control-input {
+        border-color: white;
+        background-color: black;
+        width: 340px;
+    }
+    .control-content-form_checkbox {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    .control button {
+        position: absolute;
+        bottom: -26px;
+        left: 0;
+        width: 340px;
+        height: 51px;
+    }
+}
+.types {
+}
+.types-content {
+}
+.types-content-title {
+    margin-bottom: 13px;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+}
+.types-content-logo {
+    margin: 0 auto;
+    margin-bottom: 31px;
+    position: relative;
+    background: url(./assets/svg/Repair.svg);
+    width: 33px;
+    height: 28px;
+}
+.types-content-logo::before {
+    content: '';
+    background-color: #E3B873;
+    width: 32px;
+    height: 1.5px;
+    position: absolute;
+    top: 50%;
+    left: -150%;
+}
+.types-content-logo::after {
+    content: '';
+    background-color: #E3B873;
+    width: 32px;
+    height: 1.5px;
+    position: absolute;
+    top: 50%;
+    left: 150%;
+}
+.types-content-cards {
+    margin-bottom: 124px;
+    display: flex;
+    justify-content: space-between;
+}
+.types-content-cards_item {
+    background-position: top;
+    height: 608px;
+    width: 392px;
+}
+.types-content-cards_item:nth-child(1) {
+    background: url(./assets/type_card_img_1.jpg) no-repeat;
+}
+.types-content-cards_item:nth-child(2) {
+    background: url(./assets/type_card_img_2.jpg) no-repeat;
+}
+.types-content-cards_item:nth-child(3) {
+    background: url(./assets/type_card_img_3.jpg) no-repeat;
+}
+
+.types-content-cards_item-content {
+    /* background-color: white; */
+    padding: 294px 31px 0 31px;
+}
+.types-content-cards_item-content__wrap {
+    background-color: white;
+    padding: 25px 0px  0px 34px;
+}
+.types-content-cards_item-content-list {
+    list-style-type: square;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+    padding-bottom: 49px;
+}
+.types-content-cards_item-content-list h3{
+    font-family: 'Yeseva One';
+    color: black;
+    font-size: 18px;
+    line-height: 25px;
+}
+.types-content-cards_item-content-list li{
+    font-size: 13px;
+    line-height: 27px;
+    color: #959595;
+}
+.types-content-cards_item-button {
+    margin-top: -28px;
+    margin-left: -34px;
+}
+.types-content-cards_item-button_item {
+    font-family: 'Yeseva One';
+    text-transform: uppercase;
+    width: 228px;
+    height: 54px;
+    background: #E3B873;
+    color: white;
+    border: none;
+    box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+}
+@media screen and (max-width : 1300px) {
+    .types-content {
+        padding-top: 83px;
+    }
+    .types-content-cards {
+        justify-content: unset;
+        display: flex;
+        flex-direction: column;
+    }
+    .types-content-cards_item {
+        background-position: top;
+        width: unset;
+        margin-bottom: 0px;
+    }
+    .types-content-cards_item-content {
+        padding: 223px 31px 0 31px;
+    }
+}
+.types-content-measure {
+}
+.types-content-measure_schedule {
+    background: url(./assets/image\ 6.1.jpg);
+}
+.types-content-measure_schedule-content {
+}
+.types-content-measure_schedule-content-item {
+}
+.types-content-measure_schedule-content-item_number {
+}
+.types-content-measure_schedule-content-item_number__inside {
+}
+.types-content-measure_schedule-content-item_text {
 }
